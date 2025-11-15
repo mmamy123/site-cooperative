@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Racines Marocaines</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      background-image: url('images/paysage.png'); /* VOTRE NOUVELLE IMAGE */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+    header {
+      background-color: rgba(165, 124, 85, 0.85);
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2em;
+    }
+
+    nav {
+      background-color: rgba(201, 166, 107, 0.85);
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #333;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+      background-color: rgba(255, 250, 240, 0.9);
+      border-radius: 15px;
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #7b4f24;
+    }
+
+    p {
+      text-align: center;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .produits {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .produit {
+      background-color: #fffaf0;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 20px;
+      width: 280px;
+      transition: transform 0.3s;
+    }
+
+    .produit:hover {
+      transform: translateY(-10px);
+    }
+
+    .produit img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .produit h3 {
+      color: #a57c55;
+      margin-bottom: 10px;
+    }
+
+    .produit p {
+      font-size: 0.9em;
+    }
+
+    .donate-button {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 15px;
+      background-color: #a57c55;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .donate-button:hover {
+      background-color: #7b4f24;
+    }
+
+    footer {
+      background-color: rgba(165, 124, 85, 0.85);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 900px) {
+      .produits {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Racines Marocaines</h1>
+  </header>
+
+  <nav>
+    <a href="#presentation">Présentation</a>
+    <a href="#produits">Nos Produits</a>
+    <a href="#contact">Contact</a>
+    <a href="#donate">Faire un don</a>
+  </nav>
+
+  <section id="presentation">
+    <h2>Présentation de la coopérative</h2>
+    <p>
+      Racines Marocaines est une coopérative artisanale engagée dans la valorisation des produits locaux du Maroc. 
+      Nous mettons en avant le savoir-faire ancestral de nos artisans à travers des produits authentiques tels que le miel, 
+      l'huile d'argan et l'amlou. Notre mission est de préserver les traditions tout en soutenant l’économie locale, 
+      en garantissant des produits de qualité, respectueux de l’environnement et issus du commerce équitable. 
+      En rejoignant notre communauté, vous contribuez à la sauvegarde du patrimoine culturel marocain et au développement durable.
+    </p>
+  </section>
+
+  <section id="produits">
+    <h2>Nos Produits</h2>
+    <div class="produits">
+      <div class="produit">
+        <img src="images/3197a002-689c-46d7-92be-a2cc08f7718d.png" alt="Miel marocain">
+        <h3>Miel naturel</h3>
+        <p>Miel pur produit dans les montagnes du Maroc, reconnu pour ses bienfaits naturels et sa douceur authentique.</p>
+      </div>
+      <div class="produit">
+        <img src="images/c04bba6d-5b6d-488c-8b1e-2c3ab0058068.png" alt="Huile d'argan">
+        <h3>Huile d’argan</h3>
+        <p>Huile précieuse issue d’arganiers du sud marocain, utilisée pour la peau, les cheveux et la cuisine traditionnelle.</p>
+      </div>
+      <div class="produit">
+        <img src="images/efb14d6d-dad7-4eb5-983f-0a6c880d83a0.png" alt="Amlou">
+        <h3>Amlou</h3>
+        <p>Pâte berbère à base d’amandes, de miel et d’huile d’argan — symbole du partage et de la richesse du terroir.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="donate">
+    <h2 style="text-align:center;">Soutenez notre coopérative</h2>
+    <a href="https://www.helloasso.com/" target="_blank" class="donate-button">Faire un don</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contactez-nous</h2>
+    <p>Email : <a href="mailto:contact@racinesmarocaines.ma">contact@racinesmarocaines.ma</a></p>
+    <p>Suivez-nous sur les réseaux sociaux :</p>
+    <p>
+      <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+      <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+      <a href="https://www.twitter.com" target="_blank">Twitter</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Racines Marocaines - Tous droits réservés</p>
+  </footer>
+
+</body>
+</html>
+
+
+
+
